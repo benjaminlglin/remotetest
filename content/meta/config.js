@@ -1,15 +1,15 @@
 module.exports = {
   siteTitle: "さいたまに在る教会", // <title>
   shortSiteTitle: "わたしたちは主イエスを愛し、聖書の標準にしたがう神の教会です。", // <title> ending for posts and pages
-  siteDescription: "コリントに在る神の召会（教会）へ…わたしたちの主イエス・キリストの御名を至る所で呼び求めているすべての者へ…（第1コリント1:2回復訳）",
-  siteUrl: "http://www.church-in-saitama.com/",
-  pathPrefix: "/remotetest",
+  siteDescription: "わたしたちは主イエスを愛し、聖書の標準にしたがう神の教会です。",
+  siteUrl: "http://www.church-in-saitama.com",
+  pathPrefix: "remotetest",
   siteImage: "preview.jpg",
-  siteLanguage: "en",
+  siteLanguage: "jp",
 
   /* author */
-  authorName: "test",
-  authorTwitterAccount: "test",
+  authorName: "さいたまに在る教会",
+  authorTwitterAccount: "さいたまに在る教会",
 
   /* info */
   headerTitle: "さいたまに在る教会",

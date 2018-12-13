@@ -1,5 +1,6 @@
 ---
 title: リンク集
+description: リンク集
 ---
 
 新約聖書回復訳　
