@@ -25,7 +25,7 @@ const SearchPage = props => {
         {theme => (
           <Article theme={theme}>
             <div className="icon">
-            <img src="http://www.google.com/cse/images/google_custom_search_smwide.gif"/>
+              <AlgoliaIcon />
             </div>
 
             <Search algolia={algolia} theme={theme} />
@@ -58,7 +58,7 @@ export default SearchPage;
 
 //eslint-disable-next-line no-undef
 export const query = graphql`
-  query SearchQuery {
+  query SearchQuery2 {
     site {
       siteMetadata {
         algolia {
