@@ -10,6 +10,19 @@ const Search = props => {
   return (
     <React.Fragment>
       <div className="search">
+      <script>{`
+  (function() {
+    var cx = '012828946960471351788:utif4wtuoos';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();<gcse:search></gcse:search>
+  `}</script>
+<b>aa</b>
+<gcse>cc</gcse>
         {algolia &&
           algolia.appId && (
             <InstantSearch
@@ -23,6 +36,7 @@ const Search = props => {
               <Pagination />
             </InstantSearch>
           )}
+          
       </div>
 
       {/* --- STYLES --- */}

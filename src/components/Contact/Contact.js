@@ -34,10 +34,13 @@ const Contact = props => {
   }
 
   function sendMessage(values) {
-    fetch("/", {
+    var str = JSON.stringify(values);
+    console.log(str);
+    fetch("https://prod-04.japaneast.logic.azure.com:443/workflows/d3ff95e0be3e4a8fadac46adeefd88e4/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=p711eaWC1M2-zqTiju82UJK1z3ssJxDV57YmRH3iQqk", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...values })
+      body: encode({ "form-name": "contact","message": str})// ...values 
+
     })
       .then(() => {
         console.log("Form submission success");
